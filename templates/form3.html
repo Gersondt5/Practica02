@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de producto</title>
+</head>
+<body>
+    <h1>Registro de producto</h1>
+    <form action="/form3" method="post">
+        <label for="producto">Producto:</label>
+        <input type="text" name="producto" required><br>
+
+        <label for="categoria">Categoría:</label>
+        <select name="categoria" required>
+            <option value="Limpieza">Limpieza</option>
+            <option value="Lácteos">Lácteos</option>
+            <option value="Gaseosas">Gaseosas</option>
+        </select><br>
+
+        <label for="precio">Precio:</label>
+        <input type="number" name="precio" step="0.01" required><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <a href="/">Volver al menú</a>
+</body>
+</html>
